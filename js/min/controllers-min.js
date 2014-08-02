@@ -1,1 +1,1 @@
-var myNameSpace=angular.module("directoryApp",[]);myNameSpace.controller("MyController",["$scope","$http",function e(t,a){a.get("js/data.json").success(function(e){t.artists=e,t.artistOrder="name"})}]);
+var artistControllers=angular.module("artistControllers",[]);artistControllers.controller("ListController",["$scope","$http",function(t,r){r.get("js/data.json").success(function(r){t.artists=r,t.artistOrder="name"})}]);
